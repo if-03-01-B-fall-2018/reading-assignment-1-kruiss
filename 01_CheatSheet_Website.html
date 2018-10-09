@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>01_CheetSheet-Marc Kruiß-</title>
+  </head>
+  <body>
+    <font color="green"><h1>01_CheetSheet</h1></font>
+
+<h2>by <em>Marc Kruiß</em></h2>
+<p>-----------------------------</p>
+
+<h4>Das sogenannte „CheatSheet“ dient als Aushilfe und Zusammenfassung eines Lernstoffes in dem Fach Webtechnologie.
+Dieses Cheet Cheat kann während eines Quizes verwendet werden, aber dient in erster Linie dem lernen von dem aktuellen Stoff.</h4>
+
+<section>
+  <h2>Was bedeutet HTML?</h2>
+  <p>HTML = Hypertext Markup Language</p>
+
+
+<section>
+  <h2>Big Picture</h2>
+
+
+    <p>Das Big Picture ist sozusagen das Zusammenspiel zwischen Webserver und Webclient. Diese kommunizieren mithilfe des Internets miteinander. Somit werden auch HTML files ausgetauscht, welche vom Web Client hochgeladen und vom Webserver verwendet werden können.
+    Aufbau einer URL:</p>
+    http://www.facebook.com/marc.kruiss.html
+    <p><b>Scheme</b> 	= http</p>
+    <p><b>URL</b> 		  = www.facebook</p>
+    <p><b>Server</b> 	= .com</p>
+    <p><b>Page</b> 		= marc.kruiss.html</p>
+</section>
+
+  <h2>Webserver</h2>
+  <p><b>Webclients</b>: Firefox, Microsoft Edge, Safari, Chrome</p>
+  <p><b>Webserver</b>: Google, Tornado, Microsoft</p>
+</section>
+
+<section>
+  <p>Aufbau eines HTML-Files</p>
+  <p>  <!DOCTYPE html> = Gibt dem Browser die Version der benutzten HTML Sprache.</p>
+  <p>  &lthtml&gt … &lt/html&gt = Kennzeichnet den Beginn und das Ende einer HTML-File.</p>
+  <p>&lthead&gt … &lt/head&gt = In diesem Abschnitt am Beginn, werden die Metadaten und der Titel der Webseite angegeben.</p>
+  <p>&ltbody&gt … &lt/body&gt = In diesem Abschnitt wird gearbeitet.</p>
+  <p>&lth1&gt … &lt/h1&gt = dieser Abschnitt beinhaltet eine Überschrift. Desto größer die Zahl, desto kleiner die Überschrift.</p>
+  <p>&ltp&gt … &lt/p&gt = Dieser Abschnitt bildet einen Paragraphen.</p>
+  <p>&ltsection&gt … &lt/section&gt = Dieser Abschnitt wird zur Übersicht verwendet.</p>
+
+</section>
+
+<section>
+  <h2>World Wide Web</h2>
+  <b>3 wesentliche Technologien</b>
+  <p>1. <b>UDI</b> (universal document identifier)</p>
+     <p>...<b>URL</b> (uniform Resource Locator)</p>
+     <p>...<b>URI</b> (uniform resource identifier)</p>
+
+  <p>2.  This Entwicklersprache <b>HTML</b></p>
+
+
+  <p>3.	Das Hypertext Transfer Protokoll <b>(HTTP)</b></p>
+<br>
+</section>
+
+  <h3><p><u>Ein System für global eindeutige Kennungen im Web. Die Universal Document Identifier (UDI), später bekannt als Uniform Resource Locator (URL) und Uniform Resource Identifier (URI).</u></p></h3>
+  <h2>URL</h2>
+  <b>U</b>niform <b>R</b>esource <b>L</b>ocator
+  umgangssprachlich auch Webadresse bezeichnet. Sie ist ein Verweis auf eine Webresource, dies ihren Standort in einem Computernetzwerk hat. Die URL ist eine bestimmte Art der URI.
+<br>
+  <h3>Anwendung</h3>
+  URL’s treten am häufigsten beim Verweis auf Webseiten (http) auf, aber auch für Dateiübertragung (ftp), Email (Mailto), Datenbankzugriff (JDBC) und viele andere Anwendungen verwendet.
+  <h4>Adressleiste</h4>
+  Die URL wird bei Webbrowsern über der Seiten in einer Adressleiste angezeigt.<br>
+  Typisches URL Format: http://www.example.com/index.html <br>
+  http = Scheme <br>
+  www.example.com = Hostname <br>
+  index.html = Dateiname <br>
+
+  <h4>Syntax</h4>
+  Schemen Beispiele
+  Bekannte Beispiele für Schemen sind <b>http, https, ftp, mailto, file, data, irc</b>. <br>
+  URI-Schematen sollten bei der Internet Assigned Numbers Authority (IANA) regisrtiert werden, obwohl in der Praxis nicht registrierte Systeme verwendet werden. <br>
+  <h5>Syntax</h5>
+  Jede HTTP-URL entspricht der Syntax eines <b>generischen URI</b>. Die generische URI-Syntax besteht aus einer hierarchischen Sequenz von fünf Komponenten:<br>
+  <b>URI</b> = scheme:[//authority]path[?query][#fragment]<br>
+
+
+
+
+ 
+<h2>URI Aufbau</h2>
+Die URI umfasst eine nicht leere Schema Komponente (http, https, ftp, etc..), gefolgt von einem Doppelpunkt (:).<br>
+
+<h3>Autorisierungskomponente</h3>
+Nach den zwei Schrägstrichen (//) folgt eine optionale nicht leere Autorisierungskomponente, die Folgendes umfasst:<br>
+1.
+Eine optionale Benutzerinfo-Unterkomponente, die aus einem Benutzernamen und einem optionalen Kennwort bestehen kann(username:password). Die Informationen werden von einem At-Zeichen gefolgt (@).
+Diese Informationen gelten aber als überholt und werden nicht mehr verwendet aus Sicherheitsgründen.<br>
+2.	Eine nicht leere Host-Unterkomponente, die entweder aus einem registrierten Namen (einschließlich aber nicht beschränkt auf einen Hostnamen) oder einer IP-Adresse besteht.
+IPv4-Adressen müssen in Punkt-Dezimal-Notation stehen, und IPv6-Adressen müssen in Klammern ([]) stehen.<br>
+3.	Eine optionale Port-Subkomponente mit einem Doppelpunkt (:).<br>
+
+<h3>Pfadkomponente</h3>
+Sie besteht aus einer Sequenz von Pfadsegmenten, die durch einen Schrägstrich (/) getrennt sind. Für einen URI wird immer ein Pfad definiert, obwohl der definierte Pfad möglicherweise leer ist (Länge null). Ein Segment kann auch leer sein, was zu zwei aufeinanderfolgenden Schrägstrichen (//) in der Pfadkomponente führt. Eine Pfadkomponente kann genau wie ein Dateisystempfad aussehen oder genau zugeordnet werden, bedeutet jedoch nicht immer eine Beziehung zu einem. Das letzte Segment des Pfades kann als "Slug" bezeichnet werden.<br>
+
+<h3>Abfragekomponente</h3>
+Eine optionale Abfragekomponente, der ein Fragezeichen (?) vorangestellt ist und eine Abfragezeichenfolge nicht hierarchischer Daten enthält.
+
+<h3>Fragmentkomponente</h3>
+Eine optionale Fragmentkomponente, der ein Hash (#) vorangestellt ist. Das Fragment enthält eine Fragmentkennung,
+die eine Richtung für eine sekundäre Ressource angibt, z. B. eine Abschnittsüberschrift in einem Artikel, der vom Rest der URI identifiziert wird.
+Wenn die primäre Ressource ein HTML-Dokument ist, ist das Fragment oft ein ID-Attribut eines bestimmten Elements, und Webbrowser scrollen dieses Element in die Ansicht.
+ 
+<h2>Webserver</h2>
+<h3>Funktion</h3>
+Die Hauptfunktion eines Webservers ist das Speichern, Verarbeiten und Liefern von Webseiten an Clients. Die Kommunikation zwischen Client und Server erfolgt über das Hypertext Transfer Protocol (HTTP). Am häufigsten werden HTML-Dokumente geliefert, die zusätzlich zum Textinhalt Bilder, Stylesheets und Skripte enthalten können.
+<h3>Webbrowser</h3>
+Ein Benutzeragent, üblicherweise ein Webbrowser oder Web-Crawler, initiiert die Kommunikation, indem er eine HTTP-Anforderung für eine bestimmte Ressource anfordert, und der Server antwortet mit dem Inhalt dieser Ressource oder einer Fehlermeldung, falls dies nicht möglich ist. Die Ressource ist normalerweise eine echte Datei auf dem sekundären Speicher des Servers, aber dies ist nicht unbedingt der Fall und hängt davon ab, wie der Webserver implementiert ist.
+
+Während die primäre Funktion das Bereitstellen von Inhalten ist, umfasst eine vollständige Implementierung von HTTP auch Möglichkeiten zum Empfangen von Inhalt von Clients. Diese Funktion wird zum Senden von Webformularen, einschließlich des Hochladens von Dateien, verwendet.
+<h3>ASP</h3>
+Viele generische Webserver unterstützen auch serverseitige Skripterstellung mit Active Server Pages (ASP), PHP oder anderen Skriptsprachen. Dies bedeutet, dass das Verhalten des Webservers in separaten Dateien geschrieben werden kann, während die eigentliche Server-Software unverändert bleibt. Es wird hauptsächlich zum Abrufen oder Ändern von Informationen aus Datenbanken verwendet.
+<h3>Webserver andersseitig</h3>
+Webserver dienen nicht nur zur Bereitstellung des World Wide Web. Sie können auch in Geräten wie Druckern, Routern, Webcams eingebettet sein und nur ein lokales Netzwerk bedienen.
+ 
+<h2>Webbrowser</h2>
+<h3>Einleitung</h3>
+Ein Webbrowser (üblicherweise als Browser bezeichnet) ist eine Softwareanwendung zum Zugreifen auf Informationen im World Wide Web.
+Jede einzelne Webseite, jedes Bild und jedes Video wird durch eine eindeutige URL identifiziert, die es den Browsern ermöglicht, sie auf dem Gerät des Nutzers abzurufen und anzuzeigen.<br>
+
+Ein Webbrowser ist nicht dasselbe wie eine Suchmaschine, aber es wird oft verwechselt.
+Für einen Nutzer ist eine Suchmaschine nur eine Website wie google.com, die durchsuchbare Daten über andere Websites speichert.
+Aber um sich auf ihrem Gerät mit Websites zu verbinden und Websites anzuzeigen, muss ein Benutzer einen Webbrowser installiert haben.<br>
+
+Die beliebtesten Webbrowser sind Chrome, Firefox, Safari, Internet Explorer und Edge.<br>
+
+<h3>Funktion</h3>
+Der Zweck eines Webbrowsers besteht darin, Informationsressourcen abzurufen und sie auf dem Gerät eines Benutzers anzuzeigen.<br>
+
+Dieser Prozess beginnt, wenn der Benutzer eine URL wie https://en.wikipedia.org/ in den Browser eingibt. <br>
+Praktisch alle URLs im Web beginnen entweder mit <b>http:</b> oder <b>https:</b> was bedeutet, dass der Browser sie mit dem Hypertext Transfer Protocol abruft.
+Im Falle von https: Die Kommunikation zwischen dem Browser und dem Webserver wird aus Gründen der Sicherheit und Privatsphäre verschlüsselt.
+Ein anderes URL-Präfix ist „file:“, mit der lokale Dateien angezeigt werden, die bereits auf dem Gerät des Benutzers gespeichert sind.<br>
+
+Sobald eine Webseite abgerufen wurde, zeigt die Rendering-Engine des Browsers sie auf dem Gerät des Benutzers an. Dazu gehören vom Browser unterstützte Bild- und Videoformate.<br>
+
+Webseiten enthalten normalerweise Hyperlinks zu anderen Seiten und Ressourcen.
+Jeder Link enthält eine URL, und wenn er angeklickt wird, navigiert der Browser zur neuen Ressource. Somit beginnt der Prozess, Inhalte an den Benutzer zu bringen, erneut.<br>
+
+Um das alles zu implementieren, sind moderne Browser eine Kombination aus zahlreichen Softwarekomponenten.<br>
+ 
+<h2>Hello World</h2>
+
+<h3><!DOCTYPE html></h3>
+Die &lt! DOCTYPE&gt -Deklaration muss vor dem &lthtml&gt -Tag die allererste in Ihrem HTML-Dokument sein.<br>
+Die Deklaration &lt! DOCTYPE&gt ist kein HTML-Tag; Es ist eine Anweisung an den Webbrowser, über welche Version von HTML die Seite geschrieben wird.<br>
+Fügen Sie Ihren HTML-Dokumenten immer die Deklaration &lt! DOCTYPE&gt hinzu, damit der Browser weiß, welche Art von Dokument zu erwarten ist.<br>
+
+<h3>Body Element</h3>
+Das &ltbody&gt -Tag definiert den Dokumentkörper.<br>
+Das &ltbody&gt -Element enthält den gesamten Inhalt eines HTML-Dokuments, z. B. Text, Hyperlinks, Bilder, Tabellen, Listen usw.<br>
+
+<h3>EM Element</h3>
+&ltem&gtEmphasized text&lt/em&gt<br>
+Das &ltem&gt -Tag ist ein Phrasen-Tag. Es render den Text als hervorgehobenen Text.<br>
+
+<h3>Head Element</h3>
+&lthead&gt … &lt/head&gt <br>
+Das &lthead> Element ist ein Container für alle Kopfelemente. <br>
+Das &lthead> -Element kann einen Titel für das Dokument, Skripte, Stile, Metainformationen und mehr enthalten.<br>
+Die folgenden Elemente können innerhalb des Elements &lthead> eingefügt werden:<br>
+•	&lttitle> (this element is required in an HTML document) <br>
+•	&ltstyle&gt <br>
+•	&ltbase&gt <br>
+•	&ltlink&gt <br>
+•	&ltmeta&gt <br>
+•	&ltscript&gt <br>
+•	&ltnoscript&gt <br>
+
+<h3>HTML Tag</h3>
+Das html -Tag teilt dem Browser mit, dass es sich um ein HTML-Dokument handelt.<br>
+Es repräsentiert den Stamm eines HTML-Dokuments.<br>
+Der Tag ist der Container für alle anderen HTML-Elemente (außer für das <! DOCTYPE> -Tag).<br>
+
+<h3>Strong Tag</h3>
+&ltstrong>Strong text&lt/strong><br>
+Das &ltstrong> -Tag ist ein Phrasen-Tag. Es definiert wichtigen Text.<br>
+
+<h3>Title Tag</h3>
+&lttitle>HTML Reference&lt/title><br>
+Das &lttitle> -Tag wird in allen HTML-Dokumenten benötigt und definiert den Titel des Dokuments.<br>
+Das &lttitle> Element:<br>
+     definiert einen Titel in der Browser-Symbolleiste <br>
+     gibt einen Titel für die Seite an, wenn sie den Favoriten hinzugefügt wird <br>
+     zeigt einen Titel für die Seite in den Suchergebnissen an <br>
+ 
+<h2>Fragen</h2>
+<h3>Word Wide Web General</h3>
+<h4>1.	What are the most essential technologies that made the World Wide Web such a success?</h4>
+•	UDI (universal document identifier)<br>
+URL (uniform Resource Locator)<br>
+URI (uniform resource identifier)<br>
+•	This Entwicklersprache HTML <br>
+•	Das Hypertext Transfer Protokoll (HTTP) <br>
+
+<h4>2.	How are resources (html pages, images, etc) addressed in the web?</h4>
+With the help of a URI.<br>
+
+<h4>3.	What are the general components of a URL?</h4>
+Scheme://Hostname/Filename <br>
+
+<h3>Web Server</h3>
+<h4>1.	What is a web server?</h4>
+Die Hauptfunktion eines Webservers ist das Speichern, Verarbeiten und Liefern von Webseiten an Clients.<br>
+Die Kommunikation zwischen Client und Server erfolgt über das Hypertext Transfer Protocol (HTTP).<br>
+
+<h4>2.	What does a web server?</h4>
+Ein Benutzeragent, üblicherweise ein Webbrowser oder Web-Crawler,<br>
+initiiert die Kommunikation, indem er eine HTTP-Anforderung <br>
+für eine bestimmte Ressource anfordert, <br>
+und der Server antwortet mit dem Inhalt dieser Ressource oder einer Fehlermeldung, <br>
+falls dies nicht möglich ist.<br>
+Während die primäre Funktion das Bereitstellen von Inhalten ist, <br>
+umfasst eine vollständige Implementierung von HTTP auch Möglichkeiten <br>
+zum Empfangen von Inhalt von Clients. <br>
+Diese Funktion wird zum Senden von Webformularen, einschließlich des Hochladens <br>
+von Dateien, verwendet.<br>
+
+<h4>3.	How can content be stored on a web server?</h4>
+Mithilfe von einem Upload des Clients auf den Webserver.
+
+<h4>4.	How is content in webpages described?</h4>
+Mithilfe eines Scripts.
+
+<h3>Web Client</h3>
+<h4>1.	What is a web client?</h4>
+Zum Beispiel Firefox, Microsoft Edge etc...<br>
+Ein Webbrowser (üblicherweise als Browser bezeichnet) ist eine Softwareanwendung zum Zugreifen auf Informationen im World Wide Web.<br>
+
+<h4>2.	What does a web server?</h4>
+Der Zweck eines Webbrowsers besteht darin, Informationsressourcen abzurufen und sie auf dem Gerät eines Benutzers anzuzeigen.
+
+<h4>3.	Web Client and Web Browser is the same</h4>
+Ein Webbrowser ist nicht dasselbe wie eine Suchmaschine, aber es wird oft verwechselt.<br>
+Für einen Nutzer ist eine Suchmaschine nur eine Website wie google.com, die durchsuchbare Daten über andere Websites speichert. <br>
+Aber um sich auf ihrem Gerät mit Websites zu verbinden und Websites anzuzeigen, muss ein Benutzer einen Webbrowser installiert haben.
+
+<section>
+  <h3>Hello World</h3>
+
+  <h4>1.	What is the html head element?</h4>
+  Das Doctype (<!DOCTYPE>) Element.
+
+  <h4>2.	What does <!DOCTYPE` html> mean?</h4>
+  Es kennzeichnet die HTML-Version der Datei.
+
+  <h4>3.	What are the two top most elements within the html element?</h4>
+  Das Head (&lthead&gt … &lt/head&gt) Element und das Body (&ltbody&gt … &lt/body&gt) Element.
+
+  <h4>4.	How to emphasize a text and how is it displayed in the browser?</h4>
+  Mithilfe des EM (&ltem&gt ..Text.. &lt/em&gt) Tags.
+
+  <h4>5.	How to mark up important Text and how is it displayed in the browser?</h4>
+  Zum Beispiel als Überschrift mit dem h (&lth1&gt … &lt/h1&gt) Tag.<br>
+  Oder als Paragraph mit dem p (&ltp&gt … &lt/p&gt) Tag als Absatz.<br>
+</section>
+
+
+  </body>
+</html>
